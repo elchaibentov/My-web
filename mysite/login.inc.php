@@ -20,7 +20,7 @@ $stage= $_SESSION['s'];
 				if($row['pas']==$pwd&&$row['user']==$uid)
 				{
 				  
-	              
+	              			$_SESSION['s']++; // now you can move next level
 				        header("Location: stages/stage$stage.php");
 				        exit();
 				}
