@@ -1,10 +1,10 @@
 <?php
+//The purpose of the sessions to make sure do not cheat with the url
 session_start();
 if(!isset($_SESSION['s']) )
 exit();
-if($_SESSION['s']!=3) 
+if($_SESSION['s']!=4) 
 exit();
-$_SESSION['s']=4;
 include '../checker.php';
 ?>
 <!DOCTYPE html>
